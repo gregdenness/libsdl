@@ -969,7 +969,6 @@ WIN_SetWindowHitTest(SDL_Window *window, SDL_bool enabled)
 int
 WIN_SetWindowOpacity(_THIS, SDL_Window * window, float opacity)
 {
-    // Test SDL Change
     const SDL_WindowData *data = (SDL_WindowData *) window->driverdata;
     const HWND hwnd = data->hwnd;
     const LONG style = GetWindowLong(hwnd, GWL_EXSTYLE);
